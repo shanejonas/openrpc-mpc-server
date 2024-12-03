@@ -2,6 +2,9 @@
 
 A Model Context Protocol (MCP) server that provides JSON-RPC functionality through [OpenRPC](https://open-rpc.org).
 
+https://github.com/user-attachments/assets/3447175a-f921-4ded-8250-b611edb2fb67
+
+
 ## Features
 
 ### Tools
