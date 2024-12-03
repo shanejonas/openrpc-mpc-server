@@ -16,20 +16,6 @@ import {
 } from "@modelcontextprotocol/sdk/types.js";
 
 /**
- * Type alias for a note object.
- */
-type Note = { title: string, content: string };
-
-/**
- * Simple in-memory storage for notes.
- * In a real implementation, this would likely be backed by a database.
- */
-const notes: { [id: string]: Note } = {
-  "1": { title: "First Note", content: "This is note 1" },
-  "2": { title: "Second Note", content: "This is note 2" }
-};
-
-/**
  * Create an MCP server with capabilities for tools and prompts
  * to interact with JSON-RPC servers
  */
