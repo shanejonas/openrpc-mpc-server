@@ -56,13 +56,11 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
               type: "string",
               description: "JSON-RPC method name to call"
             },
+            // this is a bit of a hack since claude seems to have issues with nested parameters
             params: {
-              oneOf: [
-                { type: "array" },
-                { type: "object" }
-              ],
-              description: "Parameters to pass to the method"
-            }
+              type: "string",
+              description: "Stringified Parameters to pass to the method"
+            } 
           },
           required: ["server", "method"]
         }
@@ -95,7 +93,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     case "rpc_call": {
       const server = String(request.params.arguments?.server);
       const method = String(request.params.arguments?.method);
-      const params = request.params.arguments?.params;
+      const params = JSON.parse(String(request.params.arguments?.params));
       let transport = new HTTPTransport(server);
       let client = new Client(new RequestManager([transport]));
       const results = await client.request({ method: method, params: params as any});
