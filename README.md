@@ -1,4 +1,5 @@
 # OpenRPC MCP Server
+[![smithery badge](https://smithery.ai/badge/openrpc-mcp-server)](https://smithery.ai/server/openrpc-mcp-server)
 
 A Model Context Protocol (MCP) server that provides JSON-RPC functionality through [OpenRPC](https://open-rpc.org).
 
@@ -33,6 +34,14 @@ npm run watch
 ```
 
 ## Installation
+
+### Installing via Smithery
+
+To install OpenRPC MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/openrpc-mcp-server):
+
+```bash
+npx -y @smithery/cli install openrpc-mcp-server --client claude
+```
 
 To use with Claude Desktop, add the server config:
 
