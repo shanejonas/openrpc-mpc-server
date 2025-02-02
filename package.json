@@ -1,8 +1,8 @@
 {
   "name": "openrpc-mcp-server",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "OpenRPC MCP server",
-  "private": true,
+  "main": "./build/index.js",
   "type": "module",
   "bin": {
     "openrpc-mcp-server": "./build/index.js"
