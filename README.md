@@ -9,6 +9,7 @@ https://github.com/user-attachments/assets/3447175a-f921-4ded-8250-b611edb2fb67
 ## Features
 
 ### Tools
+
 - `rpc_call` - Call arbitrary JSON-RPC methods
   - Specify server URL, method name, and parameters
   - Returns JSON-formatted results
@@ -19,16 +20,19 @@ https://github.com/user-attachments/assets/3447175a-f921-4ded-8250-b611edb2fb67
 ## Development
 
 Install dependencies:
+
 ```bash
 npm install
 ```
 
 Build the server:
+
 ```bash
 npm run build
 ```
 
 For development with auto-rebuild:
+
 ```bash
 npm run watch
 ```
@@ -44,8 +48,8 @@ On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
 {
   "mcpServers": {
     "openrpc": {
-      "command": "node",
-      "args": ["/path/to/openrpc-mcp-server/build/index.js"]
+      "command": "npx",
+      "args": ["-y", "openrpc-mcp-server"]
     }
   }
 }
