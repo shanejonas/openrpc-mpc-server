@@ -4,6 +4,8 @@ A Model Context Protocol (MCP) server that provides JSON-RPC functionality throu
 
 https://github.com/user-attachments/assets/3447175a-f921-4ded-8250-b611edb2fb67
 
+<a href="https://glama.ai/mcp/servers/8w5h7useml"><img width="380" height="200" src="https://glama.ai/mcp/servers/8w5h7useml/badge" alt="openrpc-mpc-server MCP server" /></a>
+
 ## Features
 
 ### Tools
