@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/shanejonas-openrpc-mpc-server-badge.png)](https://mseep.ai/app/shanejonas-openrpc-mpc-server)
+
 # OpenRPC MCP Server
 
 A Model Context Protocol (MCP) server that provides JSON-RPC functionality through [OpenRPC](https://open-rpc.org).
